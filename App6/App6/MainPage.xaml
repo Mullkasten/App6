@@ -8,7 +8,8 @@
             <Label Text="JustLive" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="Просто положи палец на камеру и нажим на кнопку" FontSize="Title" Padding="30,10,30,10"/>
-        <Button Text="Нажми на меня!" FontSize="30" Padding="30,10,30,0" Clicked="Btn1"/>
+        <Label Text="Здесь будут данные" FontSize="Title" Padding="30,10,30,10" x:Name="data1" x:DataType="x:String"/>
+        <Button Text="Нажми на меня!" FontSize="30" Padding="30,0,30,0" Clicked="Btn1"/>
         
     </StackLayout>
 

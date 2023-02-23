@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using System.Collections.Generic;
 using Emgu.Util;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
@@ -53,11 +52,12 @@ namespace App6
                     }
                 }
             }
+            data1.Text = k.ToString();
             Console.WriteLine(k);
-            static int Average(Mat frame)
+            int Average(Mat _frame)
             {
                 byte[,] array;
-                array = (byte[,])frame.GetData();
+                array = (byte[,])_frame.GetData();
                 int sum = 0;
                 foreach (byte num in array)
                 {
